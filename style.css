@@ -1,0 +1,397 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Playfair+Display&family=Poppins:wght@200;300&display=swap');
+/* font-family: 'Cormorant Garamond', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif; */
+
+:root {
+    --fonte: 'Montserrat', sans-serif;
+    --acai1: #401E31;
+    --acai2: #734960;
+    --acai3: #361A2B;
+    --acai4: #452032;
+    --acai5: #27161E;
+    --cinza: #9c9c9c;
+    --cinzaescuro: #737373;
+    --title-font: 'Poppins', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*cabeçalho*/
+
+
+header {
+    background-color: #401E31;
+    margin: 0;
+    padding: 8px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+header ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+
+}
+
+header ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+header {
+    background-color: #401E31;
+    margin: 0;
+    padding: 8px;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: baseline;
+    list-style: none;
+    color: white;
+}
+
+.nav-item {
+    margin: 35px 20px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    margin-left: 680px;
+}
+
+
+/*início*/
+
+.escrita {
+    height: 125px;
+    width: 385px;
+    margin-top: 60px;
+    margin-left: 465px;
+margin-bottom: 40px;
+}
+
+
+.foto1 {
+    width: 400px;
+    height: 500px;
+    margin-left: 50px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+
+.início {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.frase {
+    font-size: 50px;
+    margin-left: 80px;
+    margin-top: 150px
+}
+
+.sol {
+    width: 100px;
+    height: 100px;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+.silhueta {
+    width: 300px;
+    height: 400px;
+    margin-left: 400px;
+    margin-top: -240px;
+}
+
+
+/* parte de pedidos*/
+
+#pesquisa {
+    padding: 10px;
+    font-size: 20px;
+    color: #27161E;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    width: 1000px;
+    margin-left: 150px;
+    background-color: #ccc;
+    margin-top: 80px;
+}
+
+
+#tamanho {
+    display: flex;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 550px;
+    font-size: 50px;
+}
+
+.tamanhos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  margin-right: 600px;
+  margin-left: 170px;
+  gap: 35px;
+  margin-top: 20px;
+
+}
+
+
+#quadrado {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #734960;
+    width: 320px;
+    height: 150px;
+    margin-left: 150px;
+    margin-right: -150px;
+    margin-top: 20px;
+    border-radius: 10px;
+    gap: 5px;
+    margin-bottom: 20px;
+    border: 2px solid #361A2B;
+    
+}
+
+#quadrado p {
+    font-size: 23px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+#pedido {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px white solid;
+    border-radius: 10px;
+    width: 200px;
+    height: 20px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-left: 58px;
+}
+
+/*quem somos, section 3*/
+
+.section3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    max-width: 900px;
+    margin: 100px auto 10px auto;
+}
+
+.section3 h1 {
+    margin-bottom: 8px;
+    font-family: var(--title-font);
+    color: var(--acai3);
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.section3 img {
+    width: 100%;
+    height: 80%;
+}
+
+.text3 {
+    text-align: justify;
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    margin-left: -50px;
+}
+
+/* seja um franqueado, section 5 */
+
+.titulo {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: white;
+    font-family: var(--title-font);
+}
+
+.text {
+    text-align: center;
+    width: 70%;
+    font-size: 18px;
+    margin: -10px auto 40px auto;
+    font-weight: 600;
+    color: white;
+    font-weight: 400;
+}
+
+/* tipos de loja */
+
+.section4 {
+    padding: 20px;
+    background-color: var(--acai1);
+    color: white;
+}
+
+.column {
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+img {
+    width: 400px;
+    height: 260px;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.text-container {
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+}
+
+.tituloColumn {
+    color:#734960;
+}
+
+.textoColumn {
+    color: white;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+
+.row-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px;
+    gap: 25px;
+}
+
+
+@media (min-width: 768px) {
+    .column {
+        width: calc(33.33% - 20px);
+    }
+}
+
+/* section5 */
+
+.section5 h1 {
+    color: var(--acai4);
+    margin-bottom: 20px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 130px;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 50%;
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: 600;
+    color: black
+}
+
+.form-content {
+    flex: 1;
+    max-width: 35%;
+    line-height: 8vh;
+    margin-top: 30px;
+}
+
+form {
+    display: grid;
+    gap: 30px;
+}
+
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+button {
+    background-color: var(--acai1);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out
+}
+
+button:hover {
+    background-color: var(--acai3);
+    transform: scale(1.05);
+}
+
+/*rodapé*/
+footer {
+    background-color: #401E31;
+    padding: 20px;
+    height: 120px;
+}
+
+footer p {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
